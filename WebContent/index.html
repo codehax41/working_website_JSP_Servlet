@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Index Home</title>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+#foot{
+position:relative;
+margin:0;
+margin-left:45%;
+top:100px;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=text] {
+    width: 80%;
+    padding: 4px 10px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:'Roboto', sans-serif;
+}
+</style>
+</head>
+
+<body bgcolor="Orange">
+
+<div style="margin-left:400px; margin-top:150px;">
+<table style="text-align:center;">
+<tr>
+<td>
+<form action="login" method="post">
+<h1><u>ADMIN / USER LOGIN</u></h1>
+<br>
+<table border="2" id="table2" width="300px" height="200px">
+<tr><td>Username:</td><td><input type="text" name="uname"/></td></tr>
+<tr><td>Password:</td><td><input type="text" name="password"/></td></tr>
+<tr style="text-align:center"><td colspan="2"><input type="submit" value="Login"/></td></tr>
+</table>
+</form>
+</td>
+
+<td>
+<form action="register" method="post" enctype="multipart/form-data">
+<h1><u>REGISTRATION</u></h1>
+<br>
+<table border="2" id="table2" width="300px" height="200px">
+<tr><td>USER ID:</td><td><input type="text" name="userid"/></td></tr>
+<tr><td>Password:</td><td><input type="text" name="userpassword"/></td></tr>
+<tr><td>Mobile:</td><td><input type="text" name="mobileno"/></td></tr>
+<tr><td>Email:</td><td><input type="text" name="emailid"/></td></tr>
+
+<tr><td>City:</td><td>
+					<select name="cityname"><option selected>Noida</option>
+                   <option>Delhi</option>
+                   <option>Lucknow</option>
+                   <option>Chandigarh</option></select>
+                   </td></tr>
+                   
+                   
+<tr><td>Photo:</td><td><input type="file" name="photo"/></td></tr>
+<tr style="text-align:center"><td colspan="2">
+<div class="row">
+      <input type="submit" value="Save">
+    </div>
+ <!--  <input type="submit" value="Save Employee"/>  -->
+</td></tr>
+</table>
+</form>
+</td>
+</tr>
+
+</table>
+</div>
+<div id="foot">
+<h2>- made by Ram</h2>
+</div>
+</body>
+</html>
